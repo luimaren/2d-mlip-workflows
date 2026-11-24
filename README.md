@@ -38,7 +38,6 @@ The curated DFT dataset of BGDY produced with these workflows is openly availabl
 - Notebooks are distributed without outputs.
 
 ## How to cite
-## How to cite
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24516295.svg)](https://doi.org/10.5281/zenodo.24516295)
 
