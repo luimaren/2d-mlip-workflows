@@ -14,6 +14,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-4839-7604"
     affiliation: "Universidad de Valladolid"
 version: "0.1.0"
+doi: "10.5281/zenodo.24516295"
 date-released: "2026-11-25"
 license: MIT
 repository-code: "https://github.com/luimaren/2d-mlip-workflows"
