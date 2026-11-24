@@ -1,0 +1,42 @@
+seed: 42
+
+architecture:
+  name: "pet"
+  training:
+    batch_size: 2
+    num_epochs: 100  # very short period for demonstration
+    learning_rate: 1e-5  # small learning rate to stabilize training
+    finetune:
+      method: "lora"
+      read_from: pet-mad-s-v1.5.0.ckpt  # path to the pretrained checkpoint to start from
+      config:
+        alpha: 1.0
+        rank: 4
+
+training_set:
+  systems: 
+    read_from: "Dataset/BGDY/data_train_1.xyz"  # path to the finetuning dataset
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy-corrected"  # name of the target value
+      unit: "eV"
+
+validation_set:
+  systems: 
+    read_from: "Dataset/BGDY/data_val_1.xyz"
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy-corrected"
+      unit: "eV"
+
+
+test_set:
+  systems: 
+    read_from: "Dataset/BGDY/data_test_1.xyz"
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy-corrected"
+      unit: "eV"

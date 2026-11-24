@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - ase>=3.23
+    - metatrain[pet]>=2026.2
+    - matplotlib
+    - scikit-learn
+    - chemiscope
+    - metatomic-torch
+    - metatomic-ase
+    - atomistic-cookbook-utils >=0.1,<0.2

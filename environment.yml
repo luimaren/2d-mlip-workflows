@@ -1,0 +1,23 @@
+name: 2d-mlip
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - tqdm
+  - ase>=3.23
+  - pip
+  - pip:
+      - torch
+      - mace-torch>=0.3.17
+      - dscribe
+      - umap-learn
+      - matscipy
+      - hiphive
+# Optional, only for the corresponding fine-tuning folders:
+#   pip install nequip      (02_finetuning/nequip)
+#   pip install metatrain   (02_finetuning/pet)

@@ -1,0 +1,60 @@
+
+name: "FT_MACE_v30"
+seed: 96
+model: "MACE"
+
+# Dataset
+
+train_file: "Dataset_BGDY3x3_v3/train.xyz"
+valid_fraction: 0.10
+test_file: "Dataset_BGDY3x3_v3/test.xyz"
+energy_key: "energy_qe"
+forces_key: "forces_qe"
+E0s: "{5:-149.49305965, 6:-242.95557274}"
+#E0s: "estimated"
+
+
+# Foundational model
+
+foundation_model: "./mace-mh-1.model"
+foundation_head: "oc20_usemppbe"
+multiheads_finetuning: False
+
+# Optimization
+
+batch_size: 4
+valid_batch_size: 4
+max_num_epochs: 100
+lr: 1e-3
+weight_decay: 0.0
+clip_grad: 1.0
+optimizer: "adamw"
+
+# Loss
+
+forces_weight: 10.0
+energy_weight: 1.0
+stress_weight: 0.0
+compute_stress: False
+
+# Numerical stability
+
+ema: True
+ema_decay: 0.999
+swa: False
+default_dtype: float64
+
+# Reporting / checkpoints
+
+error_table: "PerAtomRMSE"
+plot: True
+plot_frequency: 0
+restart_latest: True
+
+# Data files
+
+model_dir:       "MACE_models_BGDY3x3_FTv30"
+log_dir:         "MACE_models_BGDY3x3_FTv30"
+checkpoints_dir: "MACE_models_BGDY3x3_FTv30/models"
+results_dir:     "MACE_models_BGDY3x3_FTv30"
+device: cuda

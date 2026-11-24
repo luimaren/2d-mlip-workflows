@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use these workflows, please cite them as below."
+type: software
+title: "2d-mlip-workflows: DFT dataset generation, fine-tuning of universal machine-learning interatomic potentials and molecular dynamics of 2D carbon materials"
+abstract: >-
+  Workflows and scripts to build DFT and ab initio molecular dynamics training data
+  with Quantum ESPRESSO, select configurations with SOAP descriptors and farthest-point
+  sampling, fine-tune universal machine-learning interatomic potentials (MACE, NequIP, PET),
+  estimate their uncertainty with committees, and run and analyse NVT and NPT molecular
+  dynamics of 2D carbon materials, applied to boron-graphdiyne.
+authors:
+  - family-names: "Martín Encinar"
+    given-names: "Luis"
+    orcid: "https://orcid.org/0000-0002-4839-7604"
+    affiliation: "Universidad de Valladolid"
+version: "0.1.0"
+date-released: "2026-11-25"
+license: MIT
+repository-code: "https://github.com/luimaren/2d-mlip-workflows"
+keywords:
+  - machine-learning interatomic potentials
+  - fine-tuning
+  - MACE
+  - density functional theory
+  - ab initio molecular dynamics
+  - Quantum ESPRESSO
+  - 2D materials
+  - graphdiyne
+  - hydrogen storage
+  - workflow

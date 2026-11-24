@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Models and large simulation outputs
+*.model
+*.pt
+*.traj
+*.extxyz
+*.npz
+*.zip
+*.tar.gz
+out.xyz
+frames*.xyz
+resultados*/
+results*/
+logs/
+cases/
+casos/
+dataset/
+tmp/
+wandb/
+MACE_models*/
+
+# Quantum ESPRESSO outputs and pseudopotentials
+output.*
+error.*
+*.out
+*.err
+*.UPF
+*.save/
+pseudos/
+
+# Keep the reference structure
+!structures/*.xyz
