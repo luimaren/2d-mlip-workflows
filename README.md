@@ -28,11 +28,9 @@ The HPC workflows share the same design: one folder per calculation, Slurm submi
 - Quantum ESPRESSO 7.5 (`pw.x`) and the PAW pseudopotentials `B.pbe-n-kjpaw_psl.1.0.0.UPF` and `C.pbe-n-kjpaw_psl.1.0.0.UPF` from [pslibrary](https://dalcorso.github.io/pslibrary/) (not distributed here).
 - The MACE-MH-1 foundation model (`mace-mh-1.model`), available from the [MACE foundation models](https://github.com/ACEsuit/mace-foundations).
 
-Job scripts were written for LUMI, MareNostrum 5, Leonardo and MeluXina. Accounts appear as placeholders (`<LUMI_PROJECT>`, `<BSC_ACCOUNT>`); adapt the account, partitions and modules to your machine. If you edit the `.sh` files on Windows, convert them to Unix line endings (`dos2unix *.sh`).
-
 ## Data
 
-The curated DFT dataset of BGDY produced with these workflows is openly available on Zenodo: DOI [to be added].
+The curated DFT dataset of BGDY produced with these workflows is openly available on Zenodo: https://doi.org/10.5281/zenodo.24516295.
 
 ## Notes
 
