@@ -38,8 +38,27 @@ The curated DFT dataset of BGDY produced with these workflows is openly availabl
 - Notebooks are distributed without outputs.
 
 ## How to cite
+## How to cite
 
-If you use these workflows, please cite the Zenodo record of this repository (see [`CITATION.cff`](CITATION.cff) or the "Cite this repository" button on GitHub).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24516295.svg)](https://doi.org/10.5281/zenodo.24516295)
+
+If you use these workflows, please cite:
+
+> L. Martín Encinar, *2d-mlip-workflows: DFT dataset generation, fine-tuning of universal machine-learning interatomic potentials and molecular dynamics of 2D carbon materials* (v0.1.0), Zenodo (2026). https://doi.org/10.5281/zenodo.24516295
+
+```bibtex
+@software{martin_encinar_2026_2dmlip,
+  author    = {Martín Encinar, Luis},
+  title     = {2d-mlip-workflows: DFT dataset generation, fine-tuning of universal
+               machine-learning interatomic potentials and molecular dynamics of
+               2D carbon materials},
+  version   = {v0.1.0},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.24516295},
+  url       = {https://doi.org/10.5281/zenodo.24516295}
+}
+```
 
 ## Acknowledgements
 
